@@ -84,8 +84,8 @@ class CreditCalculator:
 
         ^                    ^                  ^                ^
         Calculates           Calculates         Calculates       Calculates
-        Differentiated       Annuity            Credit           Credit
-        Payment              Monthly            Principal        Term
+        Variable             Annuity            Credit           Credit
+        Payments             Monthly            Principal        Term
         
         --term, in months. Convert years to months.
         --interest, type without the percentage. Can be a floating value.
@@ -208,7 +208,6 @@ class CreditCalculator:
 
 
 if __name__ == '__main__':
-    credit_calc = CreditCalculator()
     arguments = argv
 
     if len(arguments) < 5:
@@ -216,6 +215,7 @@ if __name__ == '__main__':
         print()
         CreditCalculator.usage()
     else:
+        credit_calc = CreditCalculator()
         credit_calc.process_arguments(arguments[1:])
         print()
         credit_calc.calculate()
