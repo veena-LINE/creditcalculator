@@ -72,6 +72,9 @@ class CreditCalculator:
         print('''
         Calculate Annuity/Differentiated Payment
         by passing necessary values:
+        
+        Usage: On a single line type,
+            python creditcalculator.py --<parameter=> --<parameter=> so on
 
         Example 1:           Example 2:         Example 3:       Example 4:
         --type=diff          --type=annuity     --type=annuity   --type=annuity
